@@ -1,0 +1,76 @@
+#main-container{
+   width:600px;
+    border:2px solid black;
+}
+.blue-box{
+    background-color: skyblue;
+    display:flex;
+    justify-content: space-between;
+    padding:0px 30px;
+ }
+.title{
+ 
+    width:180px;
+    margin-top:30px;
+    padding-left: 30px;
+}
+#fname ,#lname{
+    margin-top: 20px;
+    width:100px;
+    margin-left:50px;
+    padding:5px;
+    border-radius: 5px;
+    border:1px solid black;
+   float:right;
+}
+
+#email, #pNumber,#address{
+    width:250px;
+    padding:5px;
+    margin-left:130px;
+    border-radius: 5px;
+    border:1px solid black
+}
+#age{
+ margin-left:4px;
+ padding:0px;
+ width:200px;
+ height:2px;
+ 
+}
+.age,#check{
+    margin-top: 40px;
+    margin-left: 120px;
+}
+#state{
+  width:200px;
+}
+#state,#country{
+    padding:5px;
+    margin-left:130px;
+    width:250px;
+    border-radius: 5px;
+}
+#tags{
+    width:250px;
+    padding:5px;
+    margin-left:130px;
+    border-radius: 5px;
+    border:1px solid black
+}
+.btn2 {
+    background-color: grey; 
+     width:88px; 
+    color: white; 
+    
+    font-size: 14px; 
+    cursor: pointer; 
+    margin-left:3px;
+ 
+  }
+ #btn1{
+    margin-left:90px;
+ } 
+  .btn2:hover {
+    background-color: RoyalBlue;
+  }

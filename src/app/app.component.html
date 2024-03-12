@@ -1,0 +1,129 @@
+
+<!-- navigation Bar -->
+<div class="main-box">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container mt-5">
+        <a class="navbar-brand" class="logo" href="#">DEMO APP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav" class="right">
+          <ul class="navbar-nav me-5">
+            <li class="nav-item">
+              <a class="nav-link active1" aria-current="page" routerLink="/home" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/profile" >ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="#">JOBS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="#">CLIENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="#">EMPLOYERS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="">CONTACT US</a>
+            </li>
+  
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousal Content -->
+  
+    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="Box-1">
+            <h1 class="text"><i>I'm looking for..</i></h1>
+            <div>
+              <form action="">
+                <input type="text" name="jobdescription" id="jobd" placeholder="Enter your job description">
+                <!-- <a RouterLink="/job-details" class="btn btn-primary" type="submit"><img id="src-icon"
+                    src="assets/search.png">Search</a> -->
+                  <!-- search modal start -->
+
+
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"> search</button>
+
+                  <!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+     <h2>Job Title </h2>
+     <p>JOB Decription</p>     
+     </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+                  <!-- search modal start -->
+
+                  
+
+
+
+
+
+                <br><br>
+                <div class="justify-content-around">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="text ps-3 pe-3">Full Time</label>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                  <label class="text ps-3 pe-4">Part time/casual/freelance</label>
+  
+                  <select class="select">
+                    <option selected>Select your location</option>
+                    <option value="1">Pune</option>
+                    <option value="2">Mumbai</option>
+                    <option value="3">Nagpur</option>
+                  </select>
+                </div>
+  
+              </form>
+              <a id="btn1" routerLink="/registration" class="btn btn-primary lg">Register</a>
+            </div>
+          </div>
+  
+        </div>
+        <div class="carousel-item">
+          <h2 class="text" style="margin: 200px 500px">Second Slide</h2>
+  
+        </div>
+        <div class="carousel-item">
+          <h2 class="text" style="margin: 200px 500px">Third Slide</h2>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<router-outlet></router-outlet>

@@ -1,0 +1,36 @@
+
+
+<div class="container mt-5">
+    <h2>Profile</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="assets/caroline.jpeg"  class="m-3"class="img-fluid" alt="Single Image"><br><br>
+    
+      <form action="/upload" method="post" enctype="multipart/form-data">
+       
+        <div>
+        <button  id="btn2"  (click)="fileChangeHandler($event)" >
+            Edit Image
+        </button>
+
+        <!-- <input type="button" id="btn2" class="ms-3" value="Edit Photo" onclick="document.getElementById('fileInput').click();"> -->
+        <!-- <st-editor [(ngModel)]="content" [config]="config"></st-editor> -->
+        <input type="submit" id="btn2" class="ms-4" value="Edit Profile" onclick="document.getElementById('content').click();"><br><br><br>
+     
+        
+    
+    </div>
+      </form>
+    
+    </div>
+    <div class="col-md-5">
+      <p>
+        I'm Caroline Kassidy and Im above 20 years and you can send your emails to <a href="#">caroline.kassidy@publicis.com. </a>I live in the state of Alaska. I like to play hockey, football and reading books. And please send me newsletters. Please reach out to me on my phone number.
+       </p>
+      <button class="ms-3" id="btn3">I Agree</button>
+       
+    </div>
+  </div>
+</div>
+<!-- Text Editor -->
+
