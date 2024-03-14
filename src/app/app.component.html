@@ -1,129 +1,172 @@
+<!-- Navigation Bar With Carousal -->
 
-<!-- navigation Bar -->
 <div class="main-box">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container mt-5">
-        <a class="navbar-brand" class="logo" href="#">DEMO APP</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav" class="right">
-          <ul class="navbar-nav me-5">
-            <li class="nav-item">
-              <a class="nav-link active1" aria-current="page" routerLink="/home" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/profile" >ABOUT US</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="#">JOBS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="#">CLIENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="#">EMPLOYERS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="">CONTACT US</a>
-            </li>
-  
-          </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container mt-5">
+      <a class="navbar-brand" class="logo" href="#">DEMO APP</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav" class="right">
+        <ul class="navbar-nav me-5">
+          <li class="nav-item">
+            <a class="nav-link active1" aria-current="page"  routerLink="/home">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT US</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#">JOBS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#">CLIENTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#">EMPLOYERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">CONTACT US</a>
+          </li>
+
+        </ul>
       </div>
-    </nav>
-    <!-- Carousal Content -->
-  
-    <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="Box-1">
-            <h1 class="text"><i>I'm looking for..</i></h1>
-            <div>
-              <form action="">
-                <input type="text" name="jobdescription" id="jobd" placeholder="Enter your job description">
-                <!-- <a RouterLink="/job-details" class="btn btn-primary" type="submit"><img id="src-icon"
-                    src="assets/search.png">Search</a> -->
-                  <!-- search modal start -->
+    </div>
+  </nav>
+  <!-- Carousal Content -->
 
+  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button id="dot" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="Box-1">
+          <h1 class="text"><i>I'm looking for..</i></h1>
+          <div>
+            <form action="">
+              <input type="text" name="jobdescription" id="jobd" placeholder="Enter your job description">
+                              <button type="button" class="btn btn-primary">search</button>
 
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal"> search</button>
+              <br><br>
+              <div class="justify-content-around">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="text ps-3 pe-3">Full Time</label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                <label class="text ps-3 pe-4">Part time/casual/freelance</label>
 
-                  <!-- The Modal -->
+                <select class="select">
+                  <option selected>Select your location</option>
+                  <option value="1">Pune</option>
+                  <option value="2">Mumbai</option>
+                  <option value="3">Nagpur</option>
+                </select>
+              </div>
+
+            </form>
+            <button type="button" class="btn btn-primary mt-5 ms-5" data-bs-toggle="modal" data-bs-target="#myModal">
+             Register</button>
+          <!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-dialog">
     <div class="modal-content">
 
       <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Modal Heading</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      <div class="modal-header bg-info">
+        <h4 class="modal-title ">Register</h4>
+        <button type="button" class="btn-close bg-primary rounded-circle" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
-     <h2>Job Title </h2>
-     <p>JOB Decription</p>     
-     </div>
+         
+ <div class="container " >
+ 
+  <div class="row">
+  <div class="col-md-3">
+          <div>
+              <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+              <div><img [src]="url" *ngIf="url"></div> 
+              <p>
+                  <img src="assets/girl.jpeg" height="150px" width="150px"><br>
+                  <input type="file" style="display:none;" id="title"(change)="selectFile($event)">
+          
+                  <label for="title" class="title">Upload Your Image</label>
+              </p>
+          </div>
+      </div>
+  <div class="col-md-8 ">
+      <form (ngSubmit)="onSubmit()">
+         
+          <input type="text"  id="fname" [(ngModel)]="formData.fname" name="name" required placeholder="First Name">
+          <input type="text" id="lname" [(ngModel)]="formData.lname" name="name" required  placeholder="Last Name">
+          <br><br><br>
 
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <input type="email" id="email" [(ngModel)]="formData.email" name="email" required placeholder="Email"><br><br>
+          <input type="tel" id="pNumber" [(ngModel)]="formData.phoneNumber" name="phoneNumber" pattern="[0-9]*" placeholder="(541)753-3010"required>
+          
+          <label class="age" for="age">Age:
+          <input type="range" id="age" [(ngModel)]="formData.age" name="age" min="20" max="60"><br><br><br>
+      </label>
+          
+          <select id="state" [(ngModel)]="formData.state" name="state" required>
+              <option value="" selected>State</option>
+              <option value="MH">Maharashtra</option>
+              <option value="GJ">Gujrat</option>
+              <option value="KA">Karnataka</option>
+            </select><br><br>
+
+            <select id="country" [(ngModel)]="formData.country" value="country"name="country" required>
+              <option value="Country" selected >Country</option>
+              <option value="IND">India</option>
+              <option value="UK">United Kingdom</option>
+              <option value="SK">South Korea</option>
+            </select><br><br>
+        
+            <input type="text" id="address" [(ngModel)]="formData.address" name="address" required placeholder="Address"><br><br>
+          
+            <input type="text" id="tags" [(ngModel)]="formData.tag" name="tag" required placeholder="Tag"><br><br>
+            
+            <div>
+              <button class="btn2" >Cricket <i class="fa fa-close"></i> </button>
+              <button class="btn2"> Football<i class="fa fa-close"></i></button>
+              <button class="btn2">Hockey <i class="fa fa-close"></i> </button>
+            </div>
+            <label>
+              <input type="checkbox" id="check" [(ngModel)]="subscribeToNewsletter"> Subscribe to Newsletter
+            </label><br><br>
+            
+            <button type="submit" (click)="cancel()" class="btn btn-primary mb-3 me-4">Cancel</button>
+            <a href="/profile" class="btn btn-primary mb-3">Submit</a>
+
+      </form>
+      </div>
+  </div>
+</div>
+      </div>
+      </div>
       </div>
 
+     </div>
+  </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <h2 class="text" style="margin: 200px 500px">Second Slide</h2>
+
+      </div>
+      <div class="carousel-item">
+        <h2 class="text" style="margin: 200px 500px">Third Slide</h2>
+
+      </div>
     </div>
   </div>
 </div>
 
-                  <!-- search modal start -->
-
-                  
-
-
-
-
-
-                <br><br>
-                <div class="justify-content-around">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="text ps-3 pe-3">Full Time</label>
-                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
-                  <label class="text ps-3 pe-4">Part time/casual/freelance</label>
-  
-                  <select class="select">
-                    <option selected>Select your location</option>
-                    <option value="1">Pune</option>
-                    <option value="2">Mumbai</option>
-                    <option value="3">Nagpur</option>
-                  </select>
-                </div>
-  
-              </form>
-              <a id="btn1" routerLink="/registration" class="btn btn-primary lg">Register</a>
-            </div>
-          </div>
-  
-        </div>
-        <div class="carousel-item">
-          <h2 class="text" style="margin: 200px 500px">Second Slide</h2>
-  
-        </div>
-        <div class="carousel-item">
-          <h2 class="text" style="margin: 200px 500px">Third Slide</h2>
-  
-        </div>
-      </div>
-    </div>
-  </div>
-
- 
 <router-outlet></router-outlet>
+

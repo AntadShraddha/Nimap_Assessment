@@ -1,23 +1,24 @@
-import { Component ,Input} from '@angular/core';
+import { Component } from '@angular/core';
 import {NgxCroppedEvent, NgxPhotoEditorService} from "ngx-photo-editor";
 import {EditorConfig, ST_BUTTONS} from 'ngx-simple-text-editor';
-
 
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  styleUrls: ['./profile.component.css'],
+  
 })
 export class ProfileComponent {
-  constructor(private service: NgxPhotoEditorService ) {}
-
+ 
+   constructor(private service: NgxPhotoEditorService ) {}
+  
    output?: NgxCroppedEvent;
   fileChangeHandler($event: any) {
     this.service.open($event, {
       aspectRatio: 4 / 3,
       autoCropArea: 1
-    }).subscribe(data => {
+    }).subscribe((data: any) => {
       this.output = data;
     });
   }
@@ -30,4 +31,12 @@ export class ProfileComponent {
           placeholder: 'Type something...',
           buttons: ST_BUTTONS,
         };
+
+        
+        submit(){
+          alert('submitted')
+          }
+
+
+ 
 }

@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'Assessment'`, () => {
+  it(`should have as title 'Nimap_assessment'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('Assessment');
+    expect(app.title).toEqual('Nimap_assessment');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Assessment app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('Nimap_assessment app is running!');
   });
 });
