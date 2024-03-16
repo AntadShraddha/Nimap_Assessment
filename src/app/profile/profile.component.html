@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+  <div class="container mt-5">
+    <a class="navbar-brand text-primary" class="logo" href="#">DEMO APP</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" class="right">
+      <ul class="navbar-nav me-5">
+        <li class="nav-item">
+          <a class="nav-link active1" aria-current="page" routerLink="" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#" >ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">JOBS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">CLIENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="#">EMPLOYERS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="">CONTACT US</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2>Profile</h2>
+  <div class="row">
+    <div class="col-md-3">
+      <img src="assets/caroline.jpeg" height="30px" weight="30px" class="m-3 img-fluid" alt="Single Image"><br><br>
+    
+      <form action="/upload" method="post" enctype="multipart/form-data">
+        <button mat-button id="btn2" (click)="fileChangeHandler($event)">
+          Edit Image
+        </button>
+        <button mat-button id="btn2" class="ms-4" (click)="editProfile()">
+          Edit Profile
+        </button>
+      </form>
+    
+    </div>
+    <div class="col-md-5">
+      <p>
+        I'm {{ formData.fname }} {{ formData.lname }}and I'm above {{ formData.age }} years and you can send your emails to {{ formData.email }}. I live in the state of {{ formData.country }}. I like to play hockey, football and reading books. And please send me newsletters. Please reach out to me on my phone number.
+      </p>
+     
+      <button mat-button (click)="submit()" class="ms-3" id="btn3">I Agree</button>
+       
+    </div>
+  </div>
+</div>

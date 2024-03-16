@@ -1,0 +1,38 @@
+
+/* Third Content */
+
+#line{
+    width:100px;
+    height:3px;
+    background-color: skyblue;
+    margin-left:500px; 
+ 
+}
+#third-content ,.box {
+   text-align: center;
+   
+}
+/* Mail Content*/
+#input-container{
+    padding:80px;
+    
+}
+.icon-rtl {
+    margin-left: 350px;
+    padding-right: 25px;
+    background: url("src/assets/mail1.jpeg") no-repeat right;
+    background-size: 30px;
+    color:white;
+}
+#input1{
+    width:300px;
+    border:2px solid blue ;
+    border-radius:5px; 
+    padding:15px;
+    height:30px
+}
+/* Footer */
+
+#footer{
+    padding: 100px;
+}
